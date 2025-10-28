@@ -6,7 +6,7 @@ on:
 jobs:
   e2e-tests:
 
-    runs-on: ubunt-latest
+    runs-on: ubuntu-latest
 
     steps:
     
