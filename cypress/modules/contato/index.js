@@ -17,6 +17,11 @@ class Contato{
 
         cy.get('[data-qa="submit-button"]').click()
     }
+
+    preencherSubscription(email){
+        cy.get('input[id="susbscribe_email"]').type(email)
+        cy.get('button > i[class="fa fa-arrow-circle-o-right"]').click()
+    }
     
 }
 

@@ -10,6 +10,10 @@ class Menu{
     navegarParaContato(){
         cy.get('a[href="/contact_us"]').click()
     }
+
+    navegarParaProdutos(){
+        cy.get('a[href="/products"]').click()
+    }
 }
 
 
