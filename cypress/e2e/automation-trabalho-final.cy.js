@@ -26,14 +26,6 @@ describe('Automation Exercise', () => {
         cy.visit('https://automationexercise.com/')
     })
 
-    it('Exemplos de Logs', () =>{
-        cy.log(`Nome do usuário: ${userData.name}`)
-        cy.log(`Email do usuário: ${userData.email}`)
-
-        cy.log(`getRandomNumber: ${getRandomNumber()}`)
-        cy.log(`getRandomEmail: ${getRandomEmail()}`)
-        cy.log(`faker: ${faker.person.fullName}`)
-    })
 
     it('Test Case 1: Cadastrar usuário', () => {
 
@@ -153,7 +145,7 @@ describe('Automation Exercise', () => {
     });
 
 
-    it.only('Test Case 15: Fazer pedido e cadastro antes de finalizar a compra', () => {
+    it('Test Case 15: Fazer pedido e cadastro antes de finalizar a compra', () => {
 
         menu.navegarParaLogin()
 
